@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 	<head>
 		<style>
+			html > body {
+				/* background-image:url(https://cdn.luogu.com.cn/upload/image_hosting/plx92p9z.png);
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-position:center;
+				background-attachment:fixed; */
+				color: black;
+			}
+			.hidden {
+				display:none;
+			}
+			.visable {
+				display:inline;
+			}
 			.text1 {
 				font-family:Consolas;
 			}
@@ -8,29 +22,89 @@
 				font-family:Courier New;
 			}
 			.block1 {
-				transition:all 0.5s ease;
-				background:#33333300;
+				transition:all 0.25s ease;
+				background:#ccc7;
 				border-radius:10pt;
-				box-shadow:1px 1px 0px #000000;
+				box-shadow:1px 1px 0px #000000d1;
+				width:auto;
+				height:auto;
 			}
 			.block1:hover {
-				background:#333333cc;
-				box-shadow:1px 1px 5px #000000;
+				background:#eeea;
+				box-shadow:1px 1px 5px #000000d1;
 			}
 			.block1 > p {
-				transform:translateX(5pt);
+				padding:30px;
 			}
-			html > body {
-				color: #000000;
-				color: white;
+			.button1 {
+				background:#cbfbcfc2;
+				border:none;
+				border-top-right-radius:5pt;
+				border-bottom-right-radius:5pt;
+				padding:10px;
+			}
+			.side-box {
+				transition:all 0.5s ease;
+				background:#457c4a;
+				border-right:2pt #000000;
+				height:100%;
+				width:300pt;
+				position:absolute;
+				transform:translate(0%) translateX(-280pt) translateY(-6pt);
+				border-top-right-radius:0pt;
+			}
+			.side-box:hover {
+				background:#4da755;
+				transform:translate(0%) translateX(-36pt) translateY(-6pt);
+				/* border-top-right-radius:20pt; */
+				/* border-bottom-right-radius:20pt; */
+				width:200pt;
+			}
+			.side-text {
+				transform:translateX(60pt) translateY(20pt);
+			}
+			.top-box {
+				width:100%;
+				height:50pt;
+				background:#000;
+				z-index:100;
+				transform: translateY(-6pt);
 			}
 		</style>
 	</head>
 	<body>
-		<div id="main-block" class="block1 text2">
-			<p>
-				Hello!
-			</p>
+		<div>
+			<div class="side-box" id="sideBox" style="z-index:1">
+				<p class="text1 side-text">
+					<font size=5px> 
+						Main Page.
+					</font> 
+				</p>
+				<hr style="width:150pt;transform:translateX(10pt) translateY(20pt)"/>
+			</div>
+			<div id="topBox" class="top-box" style="z-index:10">
+			<div>
+			<script type="text/javascript">
+				var winWidth,winHeight;
+				function getWindowWH()
+				{
+					if(window.innerWidth)
+					{
+						winWidth=window.innerWidth;
+						winHeight=window.innerHeight;
+					}
+					else
+					{
+						winWidth=document.documentElement.clientWidth;
+						winHeight=document.documentElement.clientHeight;
+					}
+					let temp=document.getElementById("sideBox");
+					temp.height=winHeight+"px";
+					return;
+				}
+				window.setInterval(getWindowWH,1000);
+			</script>
 		</div>
 	</body>
 <html>
+
