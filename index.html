@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            html > body {
+                background: #26404b;
+                background: -webkit-linear-gradient(to left, #26404b, #0e2731);
+                background: linear-gradient(to left, #26404b, #0e2731);
+                color: white;
+            }
+            .text1 {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .text2 {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .text3 {
+                font-family:-apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Noto Sans,Noto Sans CJK SC,Noto Sans CJK,Source Han Sans,PingFang SC,Segoe UI,Microsoft YaHei,sans-serif;
+            }
+            #innerFiles {
+                transform: translateX(20pt) translateY(15pt);
+                width:90%;
+            }
+            .LinkNone {
+                transition: all 0.5s ease;
+                font-size:15pt;
+                color:rgba(224, 39, 33, 0.856);
+            }
+            .LinkNone:hover {
+                font-size:15pt;
+                color:rgb(235, 34, 27);
+            }
+            .LinkExist {
+                transition: all 0.5s ease;
+                font-size:15pt;
+                color:rgba(19, 130, 194, 0.856);
+            }
+            .LinkExist:hover {
+                font-size:15pt;
+                color:rgba(46, 175, 250, 0.904);
+                text-decoration: underline;
+            }
+            .LinkFile {
+                transition: all 0.5s ease;
+                font-size:15pt;
+                color:rgba(50, 204, 140, 0.747);
+            }
+            .LinkFile:hover {
+                font-size:15pt;
+                color:rgba(15, 233, 142, 0.856);
+                text-decoration: underline;
+            }
+            .icon {
+                padding-inline-start:5pt;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="innerFiles">
+            <h1 class="text1">
+                ninler144853.github.io
+            </h1>
+            <hr style="width:60%;position:fixed;transform:translateY(-10pt);"/>
+            <div id="Father" style="transform:translateY(10pt) translateX(0.5pt);">
+                <img src="Icons/FatherFolder.png"/>
+                <a class="LinkNone text3 icon">
+                    [Parent directory] (Non-existent)
+                </a>
+            </div>
+            <table style="transform:translateY(10pt)" class="text3">
+                <tbody>
+                    <tr>
+                        <td style="transform:translateX(-1pt);">
+                            <img src="Icons/Folder.png"/>
+                            <a class="LinkExist text3 icon">
+                                Icons
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="transform:translateX(-1pt);">
+                            <img src="Icons/Folder.png"/>
+                            <a class="LinkExist text3 icon">
+                                Icons
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="transform:translateX(-1pt);">
+                            <img src="Icons/Folder.png"/>
+                            <a class="LinkExist text3 icon">
+                                Icons
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="transform:translateX(-1pt);">
+                            <img src="Icons/File.png"/>
+                            <a class="LinkFile text3 icon">
+                                sdf
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
