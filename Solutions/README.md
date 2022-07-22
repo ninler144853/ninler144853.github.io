@@ -1,3 +1,1 @@
-$
-\texttt{My Solutions of some problems.}
-$
+My Solutions of some problems.
