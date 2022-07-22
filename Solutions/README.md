@@ -1,1 +1,1 @@
-My Solutions of some problems.
+Some Solutions of some problems.
